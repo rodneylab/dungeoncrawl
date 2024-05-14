@@ -1,0 +1,18 @@
+[package]
+name = "dungeoncrawl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy_app = "0.7.0"
+bevy_ecs = "0.7.0"
+bracket-lib = "~0.8.1"
+iyes_loopless = "0.5.1"
+legion = "=0.3.1"
+ron = "=0.6.1"
+serde = { version = "=1.0.115" }
+
+[profile.release]
+lto = "thin"
