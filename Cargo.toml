@@ -5,8 +5,8 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/dungeoncrawl"
-# instruemnt-coverage flag requires Rust 1.60
-rust-version = "1.60"
+# brack-lib v0.8.7 requires Rust 1.65
+rust-version = "1.65"
 description = "Rust Dungeon Crawl game"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
