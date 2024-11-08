@@ -24,7 +24,6 @@
 # list here is effectively saying which targets you are building for.
 targets = [
 
-
   # The triple can be any string, but only the target triples built in to
   # rustc (as of 1.40) can be checked against actual config expressions
   # "x86_64-unknown-linux-musl",
@@ -72,9 +71,8 @@ feature-depth = 1
 # A list of advisory IDs to ignore. Note that ignored advisories will still
 # output a note when they are encountered.
 ignore = [
-
-
   # "RUSTSEC-0000-0000",
+  "RUSTSEC-2022-0041",
   # { id = "RUSTSEC-0000-0000", reason = "you can specify a reason the advisory is ignored" },
   # "a-crate-that-is-yanked@0.1.1", # you can also ignore yanked crate versions if you wish
   # { crate = "a-crate-that-is-yanked@0.1.1", reason = "you can specify why you are ignoring the yanked crate" },
@@ -99,6 +97,7 @@ allow = [
   "CC0-1.0",
   "ISC",
   "MIT",
+  "MPL-2.0",
   "Unicode-DFS-2016",
   # "Apache-2.0 WITH LLVM-exception",
 ]
@@ -144,7 +143,6 @@ ignore = false
 # not have its license(s) checked
 registries = [
 
-
   # "https://sekretz.com/registry
 ]
 
@@ -173,13 +171,11 @@ external-default-features = "allow"
 # List of crates that are allowed. Use with care!
 allow = [
 
-
   # "ansi_term@0.11.0",
   # { crate = "ansi_term@0.11.0", reason = "you can specify a reason it is allowed" },
 ]
 # List of crates to deny
 deny = [
-
 
   # "ansi_term@0.11.0",
   # { crate = "ansi_term@0.11.0", reason = "you can specify a reason it is banned" },
@@ -214,7 +210,6 @@ deny = [
 # Certain crates/versions that will be skipped when doing duplicate detection.
 skip = [
 
-
   # "ansi_term@0.11.0",
   # { crate = "ansi_term@0.11.0", reason = "you can specify a reason why it can't be updated/removed" },
 ]
@@ -223,7 +218,6 @@ skip = [
 # dependencies starting at the specified crate, up to a certain depth, which is
 # by default infinite.
 skip-tree = [
-
 
   # "ansi_term@0.11.0", # will be skipped along with _all_ of its direct and transitive dependencies
   # { crate = "ansi_term@0.11.0", depth = 20 },
