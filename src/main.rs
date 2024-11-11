@@ -160,7 +160,7 @@ impl State {
             8,
             YELLOW,
             BLACK,
-            "Don't worry, you can always try again witha new hero.",
+            "Don't worry, you can always try again with a new hero.",
         );
         ctx.print_color_centered(9, GREEN, BLACK, "Press 1 to play again.");
 

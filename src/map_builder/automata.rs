@@ -35,9 +35,11 @@ impl MapArchitect for Architect {
 impl Architect {
     fn count_neighbours(x: i32, y: i32, map: &Map) -> usize {
         let mut neighbours = 0;
+        // spellchecker:off
         for iy in -1..=1 {
             for ix in -1..=1 {
                 if !(ix == 0 && iy == 0) && map.tiles[map_idx(x + ix, y + iy)] == TileType::Wall {
+                    // spellchecker:on
                     neighbours += 1;
                 }
             }
