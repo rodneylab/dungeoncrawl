@@ -23,7 +23,7 @@ jobs:
           egress-policy: audit
           disable-telemetry: true
       - name: Install Linux Dependencies
-        run: sudo apt-get update
+        run: sudo apt-get update && sudo apt-get -y install libfontconfig1-dev
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: dtolnay/rust-toolchain@4f647fc679bcd3b11499ccb42104547c83dabe96 # stable
       - name: Run tests
@@ -76,7 +76,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Install Linux Dependencies
-        run: sudo apt-get update
+        run: sudo apt-get update && sudo apt-get -y install libfontconfig1-dev
       - name: Install ${{ matrix.msrv }}
         uses: dtolnay/rust-toolchain@4f647fc679bcd3b11499ccb42104547c83dabe96 # stable
         with:
@@ -93,7 +93,7 @@ jobs:
           egress-policy: audit
           disable-telemetry: true
       - name: Install Linux Dependencies
-        run: sudo apt-get update
+        run: sudo apt-get update && sudo apt-get -y install libfontconfig1-dev
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - uses: dtolnay/rust-toolchain@4f647fc679bcd3b11499ccb42104547c83dabe96 # stable
