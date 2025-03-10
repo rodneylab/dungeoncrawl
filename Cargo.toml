@@ -5,19 +5,19 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/dungeoncrawl"
-# bracket-lib v0.8.7 requires Rust 1.65
-rust-version = "1.65"
+# bracket-lib 0.8.7 dependency fdeflate 0.3.7 requires Rust 1.67.0
+rust-version = "1.67"
 description = "Rust Dungeon Crawl game"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 bevy_app = "0.7.0"
 bevy_ecs = "0.7.0"
-bracket-lib = "~0.8.1"
+bracket-lib = "~0.8.7"
 iyes_loopless = "0.5.1"
 legion = "=0.3.1"
-ron = "=0.6.1"
-serde = { version = "=1.0.115" }
+ron = "=0.8.1"
+serde = { version = "=1.0.219" }
 
 [profile.release]
 lto = "thin"

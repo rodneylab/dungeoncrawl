@@ -43,7 +43,7 @@ pub fn hud(
         if carried.0 == player_entity {
             draw_batch.print(Point::new(3, y), format!("{} : {}", y - 2, &name.0));
             y += 1;
-        };
+        }
     }
     if y > 3 {
         draw_batch.print_color(
