@@ -5,8 +5,8 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/dungeoncrawl"
-# bracket-lib v0.8.7 requires Rust 1.65
-rust-version = "1.65"
+# bracket-lib 0.8.7 dependency fdeflate 0.3.7 requires Rust 1.67.0
+rust-version = "1.67"
 description = "Rust Dungeon Crawl game"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
