@@ -12,7 +12,7 @@ description = "Rust Dungeon Crawl game"
 
 [dependencies]
 bevy_app = "0.7.0"
-bevy_ecs = "0.7.0"
+bevy_ecs = "0.16.0"
 bracket-lib = "~0.8.7"
 iyes_loopless = "0.5.1"
 legion = "=0.3.1"
